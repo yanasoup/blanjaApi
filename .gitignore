@@ -1,6 +1,9 @@
 .idea
 .DS_Store
 
+assets/*
+voucher-img/*
+
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess

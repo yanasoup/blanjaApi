@@ -2,7 +2,7 @@
 
 function print_out($data = array(),$continue = true) {
 
-    echo '<pre style="background: #f0e0e0; border: 1px dashed #222; width: 94%; margin:3%; height:500px;">'.print_r($data,1).'</pre>';
+    echo '<pre style="background: #f0f0f0; border: 2px dashed #d0d0d0; width: 94%; margin:3%; padding:10px; overflow: auto;">'.print_r($data,1).'</pre>';
 
     if (!$continue) {
         die;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="default" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <!--<param name="conversionPattern" value="[%level] %date{Y-m-d H:i:s.u} - %logger - %message - %throwable%n" />-->
+            <param name="conversionPattern" value="[%level] %date{Y-m-d H:i:s.u} - %message - %throwable%n" />
+        </layout>
+        <param name="file" value="/var/www/blanjaApi/application/logs/pubgtes_%s.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <root>
+        <level value="TRACE" />
+        <appender_ref ref="default" />
+    </root>
+</configuration>
